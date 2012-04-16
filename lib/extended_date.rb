@@ -1,16 +1,16 @@
 require 'date'
 
 class Date
-  def self.month_first(dat, day)
+  def self.first_day_of_month_for(dat, day)
     parsed_date = Date.parse(dat.to_s)
-    parsed_date.month_first(day)
+    parsed_date.first_day_of_month(day)
   end
 
   def beginning_of_month
     Date.parse(self.strftime("%Y-%m-1"))
   end
 
-  def month_first(day)
+  def first_day_of_month(day)
     req_wday = case 
       when ["sunday", "0"].include?(day.to_s.downcase) then 0
       when ["monday", "1"].include?(day.to_s.downcase) then 1

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'extended_date'
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
   s.date        = '2010-04-16'
   s.summary     = "Date Class extended to get first days of month using, month_first method"
   s.description = "Date Class extended to get first days of month using, month_first method like, 
