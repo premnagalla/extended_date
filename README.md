@@ -33,6 +33,6 @@ first_day_of_month(day)
 
 ### Class Methods:
 -    Date.first_day_of_month_for(Date.today,"3")   		--> returns first wednesday of todays month
--    Date.first_day_of_month_for("2012-03-15","monday")   	--> returns first wednesday of todays month
+-    Date.first_day_of_month_for("2012-03-15","monday")   	--> returns first wednesday of given day's month
 
 
