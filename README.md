@@ -15,13 +15,13 @@ first_day_of_month(day)
 
 #### We can use these below numbers as well for week days
 
-1. sunday		- 0
-2. monday		- 1
-3. tuesday		- 2
-4. wednesday		- 3
-5. thursday		- 4
-6. friday		- 5
-7. saturday		- 6
+-    sunday		- 0
+-    monday		- 1
+-    tuesday		- 2
+-    wednesday		- 3
+-    thursday		- 4
+-    friday		- 5
+-    saturday		- 6
 
 ## Usage
 
