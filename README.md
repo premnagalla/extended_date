@@ -8,6 +8,7 @@ Extended methods for Date class, to get first days of month (first sunday, first
 Date.first_day_of_month_for(dat,day)
 - dat can be, date object / date string
 - day can be, case insensitive string of weekdays / below mentioned numbers representing weekdays
+
 Date.wednesday_of_year(week, year)
 - week is week number starting from Jan 1 as week 1
 - year can be any valid year
