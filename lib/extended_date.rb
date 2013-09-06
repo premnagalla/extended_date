@@ -5,6 +5,12 @@ class Date
     parsed_date = Date.parse(dat.to_s)
     parsed_date.first_day_of_month(day)
   end
+  
+  # returns xth wednesday of year
+  def self.wednesday_of_year(week, year)
+  	date = Date.new(year, 1, 1)
+  	date.next_wednesday + ((week-1) * 7)
+  end
 
   def beginning_of_month
     Date.parse(self.strftime("%Y-%m-1"))
@@ -29,5 +35,14 @@ class Date
       req_days = ((req_days>=0) ? req_days : (7+req_days))
       result = beginning_of_month + req_days
     end
+  end
+  
+  # returns next wednesday from current date
+  def next_wednesday
+    date = self
+    while !date.wednesday?
+      date = date.next
+    end
+    date
   end
 end
